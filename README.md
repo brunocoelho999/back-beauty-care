@@ -47,17 +47,16 @@ Todas las funcionalidades han sido rigurosamente testeadas con Jest para garanti
 | ------ | --------------- | ------------------------------------------------------------------------------ |
 | POST   | /users/register | Registrar un nuevo usuario con campos obligatorios.                            |
 | POST   | /users/login    | Autenticar un usuario con nombre de usuario o correo electrónico y contraseña. |
-| GET    | /users          | Obtener una lista de usuarios. (Solo puede realizarlo el administrador)        |
 
 ### Cuidados Estéticos
 
-| Método | URL        | Descripción                                                                               |
-| ------ | ---------- | ----------------------------------------------------------------------------------------- |
-| GET    | /cares     | Obtener la lista de cuidados estéticos disponibles.                                       |
-| GET    | /cares/:id | Obtener información detallada sobre un cuidado estético específico.                       |
-| POST   | /cares     | Agregar un nuevo cuidado estético a la colección. Requiere derechos de administrador.     |
-| PATCH  | /cares/:id | Actualizar detalles de un cuidado estético existente. Requiere derechos de administrador. |
-| DELETE | /cares/:id | Eliminar un cuidado estético de la colección. Requiere derechos de administrador.         |
+| Método | URL                | Descripción                                                                               |
+| ------ | ------------------ | ----------------------------------------------------------------------------------------- |
+| GET    | /cares             | Obtener la lista de cuidados estéticos disponibles.                                       |
+| GET    | /cares/search/type | Paginado por tipos de servicios.                                                          |
+| POST   | /cares             | Agregar un nuevo cuidado estético a la colección. Requiere derechos de administrador.     |
+| PATCH  | /cares/:id         | Actualizar detalles de un cuidado estético existente. Requiere derechos de administrador. |
+| DELETE | /cares/delete/:id  | Eliminar un cuidado estético de la colección. Requiere derechos de administrador.         |
 
 ## Instrucciones de Ejecución
 
