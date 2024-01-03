@@ -70,5 +70,5 @@ Antes de ejecutar el backend de la aplicación, asegúrese de tener instaladas l
 1. **Clone el repositorio:**
 
 ```bash
-git clone https://github.com/isdi-coders-2023/Bruno-Coelho-Final-Project-back-202309-mad
+git clone https://github.com/brunocoelho999/back-beauty-care
 ```
