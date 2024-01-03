@@ -1,74 +1,73 @@
-# MVP Bruno Beauty Care - Plataforma de Cuidados Estéticos Femeninos
+# MVP Bruno Beauty Care - Female Aesthetic Care Platform
 
-## Descripción del Proyecto
+## Project Description
 
-Bruno Beauty Care es un proyecto centrado en proporcionar servicios y cuidados estéticos femeninos. Desarrollado como parte de nuestro compromiso con la excelencia en el mundo de la belleza, la aplicación ofrece una plataforma integral para explorar, registrar y gestionar diversos servicios de cuidado estético.
+Bruno Beauty Care is a project focused on providing services and aesthetic care for women. Developed as part of our commitment to excellence in the beauty world, the application offers a comprehensive platform to explore, register, and manage various aesthetic care services.
 
-## Funcionalidades Principales
+## Key Features
 
-### Registro y Login de Usuarios
+### User Registration and Login
 
-La aplicación presenta un sistema de registro y login que permite a los usuarios gestionar sus cuentas de manera segura y personalizada.
+The application features a registration and login system that allows users to manage their accounts securely and personalized.
 
-### Lista de Cuidados Estéticos
+### Aesthetic Care List
 
-Los usuarios pueden explorar la lista completa de cuidados estéticos disponibles en Bruno Beauty Care, proporcionando una visión detallada de cada servicio.
+Users can explore the complete list of aesthetic care available at Bruno Beauty Care, providing a detailed overview of each service.
 
-### Funcionalidades de Administrador
+### Administrator Functionalities
 
-Los administradores disfrutan de privilegios exclusivos, incluyendo la capacidad de:
+Administrators enjoy exclusive privileges, including the ability to:
 
-- Crear nuevos cuidados estéticos.
-- Modificar información de cuidados existentes.
-- Eliminar servicios de la plataforma.
+- Create new aesthetic care services.
+- Modify information for existing care services.
+- Remove services from the platform.
 
-### Detalles del Cuidado Estético
+### Aesthetic Care Details
 
-Ambos tipos de usuarios pueden acceder a detalles específicos de cada cuidado estético, incluyendo sus características y requisitos. Se ha implementado un filtro para facilitar la búsqueda según las preferencias de los usuarios.
+Both types of users can access specific details of each aesthetic care, including its features and requirements. A filter has been implemented to facilitate searching based on user preferences.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 **MERN Stack:**
 
-- MongoDB con Mongoose (Backend)
+- MongoDB with Mongoose (Backend)
 - Express (Backend)
 - React (Frontend)
 - Node (Backend)
 
-### Pruebas
+### Testing
 
-Todas las funcionalidades han sido rigurosamente testeadas con Jest para garantizar un rendimiento óptimo.
+All functionalities have been rigorously tested with Jest to ensure optimal performance.
 
-## Listado de Endpoints
+## Endpoint Listing
 
-### Usuarios
+### Users
 
-| Método | URL             | Descripción                                                                    |
-| ------ | --------------- | ------------------------------------------------------------------------------ |
-| POST   | /users/register | Registrar un nuevo usuario con campos obligatorios.                            |
-| POST   | /users/login    | Autenticar un usuario con nombre de usuario o correo electrónico y contraseña. |
+| Method | URL             | Description                                                                   |
+| ------ | --------------- | ----------------------------------------------------------------------------- |
+| POST   | /users/register | Register a new user with mandatory fields.                                    |
+| POST   | /users/login    | Authenticate a user with a username or email and password.                    |
 
-### Cuidados Estéticos
+### Aesthetic Care
 
-| Método | URL                | Descripción                                                                               |
-| ------ | ------------------ | ----------------------------------------------------------------------------------------- |
-| GET    | /cares             | Obtener la lista de cuidados estéticos disponibles.                                       |
-| GET    | /cares/search/type | Paginado por tipos de servicios.                                                          |
-| POST   | /cares             | Agregar un nuevo cuidado estético a la colección. Requiere derechos de administrador.     |
-| PATCH  | /cares/:id         | Actualizar detalles de un cuidado estético existente. Requiere derechos de administrador. |
-| DELETE | /cares/delete/:id  | Eliminar un cuidado estético de la colección. Requiere derechos de administrador.         |
+| Method | URL                | Description                                                               |
+| ------ | ------------------ | ------------------------------------------------------------------------- |
+| GET    | /cares             | Get the list of available aesthetic care.                                  |
+| GET    | /cares/search/type | Paginated by service types.                                               |
+| POST   | /cares             | Add a new aesthetic care to the collection. Requires administrator rights.|
+| PATCH  | /cares/:id         | Update details of an existing aesthetic care. Requires administrator rights.|
+| DELETE | /cares/delete/:id  | Delete an aesthetic care from the collection. Requires administrator rights.|
 
-## Instrucciones de Ejecución
+## Execution Instructions
 
-Antes de ejecutar el backend de la aplicación, asegúrese de tener instaladas las siguientes dependencias:
+Before running the backend of the application, make sure to have the following dependencies installed:
 
-1. **Node.js:** Descargar e instalar Node.js.
-2. **MongoDB:** Descargar e instalar MongoDB.
+1. **Node.js:** Download and install Node.js.
+2. **MongoDB:** Download and install MongoDB.
 
-### Configuración del Backend
+### Backend Configuration
 
-1. **Clone el repositorio:**
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/brunocoelho999/back-beauty-care
-```
